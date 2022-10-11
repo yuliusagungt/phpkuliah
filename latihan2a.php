@@ -7,8 +7,8 @@
     <title>Input</title>
 </head>
 <body>
-    <h1>FORM BIODATA</h1>
-        <thead>
+    <h1>Form Biodata</h1>
+    
     <form action="latihan2b.php" method="POST">
         <table>
             <tr>
@@ -62,21 +62,11 @@
 
             <tr>
                 <td>
-                    <label for="hobby"> Hobby : </label>
+                    <label for="hobby[]"> Hobby : </label>
                 </td>
 
                 <td>
-                    <input type="checkbox" name="hobby" value="Music"/>Music
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p></p>
-                </td>
-
-                <td>
-                    <input type="checkbox" name="hobby" value="Programming"/>Programing
+                    <input type="checkbox" name="hobby[]" value="Music"/>Music
                 </td>
             </tr>
 
@@ -86,7 +76,7 @@
                 </td>
 
                 <td>
-                    <input type="checkbox" name="hobby" value="Game"/>Game
+                    <input type="checkbox" name="hobby[]" value="Programming"/>Programing
                 </td>
             </tr>
 
@@ -96,7 +86,17 @@
                 </td>
 
                 <td>
-                    <input type="checkbox" name="hobby" value="Movies"/>Movies
+                    <input type="checkbox" name="hobby[]" value="Game"/>Game
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                </td>
+
+                <td>
+                    <input type="checkbox" name="hobby[]" value="Movies"/>Movies
                 </td>
             </tr>
             
@@ -106,7 +106,7 @@
                 </td>
 
                 <td>
-                    <input type="checkbox" name="hobby" value="Travelling"/>Travelling
+                    <input type="checkbox" name="hobby[]" value="Travelling"/>Travelling
                 </td>
             </tr>
 
@@ -116,7 +116,7 @@
                 </td>
 
                 <td>
-                    <input type="checkbox" name="hobby" value="Sport"/>Sport
+                    <input type="checkbox" name="hobby[]" value="Sport"/>Sport
                 </td>
             </tr>
 
@@ -126,7 +126,7 @@
                 </td>
 
                 <td>
-                    <input type="checkbox" name="hobby" value="Organization"/>Organization
+                    <input type="checkbox" name="hobby[]" value="Organization"/>Organization
                 </td>
             </tr>
 
@@ -136,12 +136,12 @@
                 </td>
 
                 <td>
-                    <input type="checkbox" name="hobby" value="Automotive"/>Automotive
+                    <input type="checkbox" name="hobby[]" value="Automotive"/>Automotive
                 </td>
             </tr>
 
             <tr>
-                <td><input type="submit" value="Submit" /></td>
+                <td><input name = "submit" type="submit" value="submit" /></td>
             </tr>
         </table>
 

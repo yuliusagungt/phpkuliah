@@ -42,6 +42,14 @@
         }else{
             echo "Mohon Maaf Gagal Login";
         }
+
+        // if(isset($_POST['submit'])){
+        //     if(!empty($_POST['hobby'])){
+        //     foreach($_POST['hobby'] as $checked){
+        //       echo $checked.", ";
+        //     }
+        //   }
+        // }
     ?>
 </body>
 </html>

@@ -32,7 +32,7 @@
             </tr>
 
             <tr>
-                <td><label for="lang">Status Kelulusan  </label></td>
+                <td><label for="status">Status Kelulusan  </label></td>
 
                 <td>
                     <select name="status">
