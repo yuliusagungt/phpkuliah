@@ -9,7 +9,7 @@
 <body>
     <h1>Form Biodata</h1>
     
-    <form action="latihan2b.php" method="POST">
+    <form action="1latihan2b.php" method="POST">
         <table>
             <tr>
                 <td>

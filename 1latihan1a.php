@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="latihan1b.php" method="POST">
+    <form action="1latihan1b.php" method="POST">
         <table>
             <tr>
                 <td>
