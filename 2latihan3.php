@@ -21,6 +21,9 @@
 
         echo "<input type = 'submit'/>";
         echo "</form>";
+
+        
+    echo "<button><a href = './2latihan4.php'>Kembali</a></button>";
     ?>
 </body>
 </html>

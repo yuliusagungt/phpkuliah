@@ -21,6 +21,9 @@
         echo "<tr><td>NIM</td><td>Nama</td></tr>";
         echo "<tr><td>$terpilih</td><td>$nimNama[$terpilih]</td></tr>";
     echo "</table>";
+
+    
+    echo "<button><a href = './2latihan2.php'>Kembali</a></button>";
     ?>
 </body>
 </html>

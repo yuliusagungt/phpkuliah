@@ -16,6 +16,9 @@
         echo "<li>$s";
     }
     echo "</ul>";
+
+    
+    echo "<button><a href = './2latihan4.php'>Kembali</a></button>";
     ?>
 </body>
 </html>

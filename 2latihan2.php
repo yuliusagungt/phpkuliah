@@ -17,6 +17,9 @@
             echo "<li><a href = './2latihan2a.php?nim=$n'>$n</a>";
         }
         echo "</ol>";
+
+        
+    echo "<button><a href = './2latihan4.php'>Kembali</a></button>";
     ?>
 </body>
 </html>

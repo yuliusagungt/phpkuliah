@@ -20,7 +20,7 @@
         }
     echo "</ol>";
 
-    echo "<a href = './2latihan3.php'>kembali</a>";
+    echo "<button><a href = './2latihan3.php'>Kembali</a></button>";
     ?>
 </body>
 </html>

@@ -28,6 +28,9 @@
         $counter++;
     }
     echo "</table>";
+
+    
+    echo "<button><a href = './2latihan4.php'>Kembali</a></button>";
     ?>
 </body>
 </html>

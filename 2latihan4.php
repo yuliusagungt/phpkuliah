@@ -12,10 +12,12 @@
     <p>Pilih Salah Satu Aplikasi di Bawah Ini : </p>
 
     <?php 
-        echo "<p><a href = './2latihan1.php'>Latihan 1 (Unorder List)</a></p>";
-        echo "<p><a href = './2latihan1a.php'>Latihan 1 (Table)</a></p>";
-        echo "<p><a href = './2latihan2.php'>Latihan 2</a></p>";
-        echo "<p><a href = './2latihan3.php'>Latihan 3</a></p>";
+    echo "<ul>";
+        echo "<li><p><a href = './2latihan1.php'>Latihan 1 (Unorder List)</a></p>";
+        echo "<li><p><a href = './2latihan1a.php'>Latihan 1 (Table)</a></p>";
+        echo "<li><p><a href = './2latihan2.php'>Latihan 2</a></p>";
+        echo "<li><p><a href = './2latihan3.php'>Latihan 3</a></p>";
+    echo "</ul>";
     ?>
 </body>
 </html>
