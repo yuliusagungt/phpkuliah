@@ -13,7 +13,9 @@
     <title>Delete Cookie</title>
 </head>
 <body>
-    <h1>Cookie Berhasil Dihapus</h1>
-    <button><a href='./3cookie_tugas.php'>Kembali</a></button>
+<div class="container container ml-2 bg-light">
+    <h1>Pendaftaran Berhasil Dibatalkan</h1>
+    <p><a href='./3cookie_tugas.php'>Kembali</a></p>
+</div>
 </body>
 </html>

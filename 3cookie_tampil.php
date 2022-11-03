@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<div class="container container ml-2 bg-light">
     <h1>Pendaftaran Berhasil</h1>
     <?php
     $noInduk = $_POST["inputNoInduk"];
@@ -17,18 +18,18 @@
     $all = "";
     if (!empty($_POST['minat'])) {
         foreach ($_POST['minat'] as $minat) {
-            $all .=$minat.", "; 
+            $all .= $minat . ", ";
         }
     }
 
-    setcookie("noInduk", "$noInduk" );
+    setcookie("noInduk", "$noInduk");
     setcookie("nama", "$nama");
     setcookie("status", "$status");
     setcookie("minat", "$all")
 
     ?>
-
-    <button><a href='./3cookie_tugas.php'>Kembali</a></button>
+    <p><a href='./3cookie_tugas.php'>Kembali</a></p>
+</div>
 </body>
 
 </html>

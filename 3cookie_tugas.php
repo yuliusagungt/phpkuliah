@@ -1,7 +1,3 @@
-<?php 
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,16 +11,23 @@
         #minat {
             margin-right: 15px;
         }
-        <?php 
-            if(!isset($_COOKIE['noInduk']) && !isset($_COOKIE['nama']) && !isset($_COOKIE['status'])&& !isset($_COOKIE['minat'])){  
-                echo "#hasil{";
-                echo "display: none;";
-                echo "}";   
-            }else{
-                echo "#daftar{";
-                echo "display: none;";
-                echo "}";
-            }
+
+        #daftar,
+        #hasil {
+            background-color: antiquewhite;
+            width: max-content;
+        }
+
+        <?php
+        if (!isset($_COOKIE['noInduk']) && !isset($_COOKIE['nama']) && !isset($_COOKIE['status']) && !isset($_COOKIE['minat'])) {
+            echo "#hasil{";
+            echo "display: none;";
+            echo "}";
+        } else {
+            echo "#daftar{";
+            echo "display: none;";
+            echo "}";
+        }
         ?>
     </style>
     <title>Pendaftaran Seminar</title>
@@ -32,19 +35,19 @@
 
 <body>
 
-    <div class="container container ml-2" id="daftar">
+    <div class="container container ml-0 pl-5 pb-2" id="daftar">
         <h1>PENDAFTARAN PESERTA SEMINAR</h1>
 
         <form action="3cookie_tampil.php" method="POST">
             <div class="form-group row">
                 <label for="inputNoInduk" class="col-sm-1 col-form-label">No Induk</label>
-                <div class="col-sm-2">
+                <div class="col-sm-4">
                     <input type="text" class="form-control" name="inputNoInduk" />
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputNama" class="col-sm-1 col-form-label">Nama</label>
-                <div class="col-sm-2">
+                <div class="col-sm-4">
                     <input type="text" class="form-control" name="inputNama" />
                 </div>
             </div>
@@ -103,12 +106,12 @@
     <?php
 
     ?>
-    <div class="container container ml-2 bg-light" id="hasil">
+    <div class="container container ml-0 pl-5 pb-2" id="hasil">
         <h1>Anda Sudah Terdafter Sebagai Peserta Seminar</h1>
-        <table border="5" cellpadding = "10">
+        <table border="5" cellpadding="10">
             <tr>
                 <td>No Induk</td>
-                <td><?php echo $_COOKIE['noInduk'];?></td>
+                <td><?php echo $_COOKIE['noInduk']; ?></td>
             </tr>
 
             <tr>
@@ -118,16 +121,17 @@
 
             <tr>
                 <td>Status</td>
-                <td><?php echo $_COOKIE['status'];?></td>
+                <td><?php echo $_COOKIE['status']; ?></td>
             </tr>
 
             <tr>
                 <td>Minat</td>
-                <td><?php echo $_COOKIE['minat'];?></td>
+                <td><?php echo $_COOKIE['minat']; ?></td>
             </tr>
         </table>
-        
-    <button><a href='./3dell.php'>Dell Cookie</a></button>
+
+        <br>
+        <p><a href='./3dell.php'>Batakan Pendaftaran</a></p>
     </div>
 </body>
 
