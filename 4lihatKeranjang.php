@@ -25,7 +25,7 @@ session_start();
 </head>
 
 <body>
-    <div class="countainer bg-light pb-5" style="width: 30vw;" id="utama">
+    <div class="container bg-light pb-5" style="width: 30vw;" id="utama">
         <div class="row">
             <div class="col-12">
                 <h3>Barang Yang Sudah Dipilih</h3>
@@ -34,21 +34,25 @@ session_start();
                 <?php
                 echo "<ol>";
 
-                if (!empty($_POST['makanminum'])) {
-                    foreach ($_POST['makanminum'] as $makanminum) {
-                        echo "<li>" . $makanminum . "</li>";
+                if(isset($_SESSION['makanminum'])){
+                    $makanminum = $_SESSION['makanminum'];
+        
+                    foreach($makanminum as $mm){
+                        echo "<li>$mm</li>";
                     }
                 }
-
-                if (!empty($_POST['peralatanmandi'])) {
-                    foreach ($_POST['peralatanmandi'] as $peralatanmandi) {
-                        echo "<li>" . $peralatanmandi . "</li>";
+                if(isset($_SESSION['peralatanmandi'])){
+                    $peralatanmandi = $_SESSION['peralatanmandi'];
+        
+                    foreach($peralatanmandi as $pm){
+                        echo "<li>$pm</li>";
                     }
                 }
-
-                if (!empty($_POST['alattulis'])) {
-                    foreach ($_POST['alattulis'] as $alattulis) {
-                        echo "<li>" . $alattulis . "</li>";
+                if(isset($_SESSION['alattulis'])){
+                    $alattulis = $_SESSION['alattulis'];
+        
+                    foreach($alattulis as $at){
+                        echo "<li>$at</li>";
                     }
                 }
                 echo "</ol>";
@@ -57,7 +61,7 @@ session_start();
             </div>
             <div class="col-12 pt-2">
                 <a href="4pilihBarang.php">
-                    <input class="btn btn-primary" name="back" value="Kembali" />
+                    <input class="btn btn-primary" name="back" value="Tambah Barang" />
                 </a>
             </div>
             <div class="col-12 pt-2">

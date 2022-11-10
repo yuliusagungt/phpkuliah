@@ -25,7 +25,7 @@ session_start();
 </head>
 
 <body>
-    <form action="4lihatKeranjang.php" method="POST">
+    <form action="4masukKerajang.php" method="POST">
         <div class="container bg-light" style="width: 800px; height:800px;" id="utama">
             <div class="row text-center pb-5">
                 <div class="col-12">
