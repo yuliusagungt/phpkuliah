@@ -18,12 +18,17 @@ if (!$conn) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Toko IndoMei</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+    <style>
+        body,
+        .container {
+            background-color: #ADD8E6;
+        }
+    </style>
 </head>
 
 <body>
     <form action="5sql.php" method="POST">
-        <div class="container bg-warning" style="width: 800px;" id="input">
+        <div class="container" style="width: 800px;" id="input">
             <div class="row pb-3">
                 <div class="col-12 text-center pb-3">
                     <h1>Input Stok Gudang</h1>
@@ -71,7 +76,7 @@ if (!$conn) {
                 <div class="col-6 pb-4"><input type="text" class="form-control" name="stok" required /></div>
                 <div class="col-4"></div>
 
-                <div class="col-3 pt-2">  
+                <div class="col-3 pt-2">
                     <a href="5tampil.php" class="btn btn-primary" role="button">Lihat Daftar Stok</a>
                 </div>
 
@@ -92,10 +97,12 @@ if (!$conn) {
                 <div class="col-2"></div>
                 <div class="col-4 pt-4">
                     <div class="card text-danger text-center border-danger bg-warning" style="width: 500px;">
-                        <div class="card-title"><p class="h5">PENTING</p></div>
+                        <div class="card-title">
+                            <p class="h5">PENTING</p>
+                        </div>
                         <div class="card-text">
-                        <p class="h6">Sebelum melakukan Update, pastikan kode barang sesuai <br>
-                                                dengan stok yang ada dalam gudang</p>
+                            <p class="h6">Sebelum melakukan Update, pastikan kode barang sesuai <br>
+                                dengan stok yang ada dalam gudang</p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +111,7 @@ if (!$conn) {
     </form>
 
     <!-- Modal -->
-    <div class="modal fade modal-xl" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+    <div class="modal fade modal-xl" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
