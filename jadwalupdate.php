@@ -17,17 +17,12 @@ $dosen = $_POST["dosen"];
 $hari = $_POST["hari"];
 $mulai = $_POST["mulai"];
 $selesai = $_POST["selesai"];
-$sql  = "";
 
-if ($_POST["submit"] == "Simpan") {
-    $sql = "INSERT INTO jadual (kode, matakuliah, kelas, pengampu, hari, jam_mulai, jam_berakhir)
-        VALUES ('$kode', '$nama', '$kelas', '$dosen', '$hari', '$mulai', '$selesai');";
-
-    if (mysqli_multi_query($conn, $sql)) {
-        header('Location:jadwaltampil.php');
-    } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
+$sql = "UPDATE jadual SET kode='$kode', matakuliah='$nama', kelas='$kelas', pengampu='$dosen', hari='$hari', jam_mulai='$mulai', jam_berakhir='$selesai' WHERE kode='$kode'";
+if (mysqli_multi_query($conn, $sql)) {
+    header('Location:jadwaltampil.php');
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
 mysqli_close($conn);
